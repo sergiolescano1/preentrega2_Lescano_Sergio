@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    
+    <header class="navbackground">
+
+        <!--Colocó icono-->
+        <a href="../index.html">
+            <img src="../img/icono.png" alt="Logo" title="Este es el logo" class="logo">
+        </a>
+    
+    
+        <!-- <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>-->
+        <!--Estructura de un menu de navegación-->
+        <nav >
+            <ul class ="menu__nav"  >
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>  
+                    <a href="jugadores.html">Jugadores</a>
+                </li>
+                <li>
+                    <a href="Estadio.html">Estadio</a>
+    
+                </li>
+                <li>
+                    <a href="videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+    
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="parallax-contacto">
+        <h1>Formularios de Inscripción</h1>
+
+        <form>
+            <fieldset class="fieldset_color">
+                <!--Textos-->
+            <div>
+                <label for="nombre-apellido">Nombre y Apellido</label>
+                <input type="text" id="nombre-apellido" placeholder="Ingresa tu nombre y apellido">
+            </div>
+            
+            <div>
+                <!--Correos electronicos-->
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo"placeholder="Correo Electrónico">
+            </div>
+
+            <div>
+                <!--Correos electronicos-->
+                <label for="Telefono"> Telefono</label>
+                <input type="tel" id="telefono"placeholder="Ingrese Telefono">
+            </div>
+          
+            
+
+            <div class="row">
+                <label class="required" for="message">Mensaje:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <span id="message_validation" class="error_message"></span>
+              </div>
+           
+            <!--botones-->
+            <!--Submit para enviar-->
+            <input type="submit" value="Enviar">
+
+            <!--Para limpiar o resetear-->
+            <input type="reset" value="Limpiar formulario">
+
+         
+           
+        </form>
+    </section>
+
+<footer id="footer" >
+    <div class="footer_down">
+    <p class="text-center" >Todos los derechos reservados. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum esse quos similique, aut et magnam quibusdam ducimus! Ipsum repellat dolore doloremque vero numquam totam velit consequatur ut quo! At.</p>
+  </div>
+  </footer>
+
+</body>
+</html>

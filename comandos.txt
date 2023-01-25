@@ -1,0 +1,25 @@
+Comandos:
+
+1. git init este sirve para empezar a trabajar con git. Solo se escribe la primera vez
+
+2. git status me indica siempre el estado en el que está mi repositorio.
+
+3. git add .
+Con git add añadimos todos los archivos que git no encuentre.
+
+4. git commit -m "escribir un mensaje"
+Para confirmar los cambios realizados en el código. Siempre debe llevar un mensaje lo más descriptivo posible.
+
+.gitignore (para investigar)
+
+5. git branch
+Consultar las ramas del repositorio
+
+6. git branch rama-ejemplo
+crea una nueva rama con el nombre que se quiera (sin espacios)
+
+7. git checkout rama-ejemplo
+Moverse a la nueva rama.
+
+8. git merge rama-ejemplo
+Para fusionar con la main los cambios realizados en la rama. El git merge SIEMPRE DEBE HACERSE DESDE LA RAMA MAIN
