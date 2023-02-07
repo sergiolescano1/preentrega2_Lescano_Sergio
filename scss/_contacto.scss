@@ -1,0 +1,45 @@
+*/////////////////////////////////////*/
+/*contacto*/
+/*////////////////////////////////////*/
+
+
+.fieldset_color
+{
+  background-color: rgba(19, 6, 203, 0.3);
+  label{
+    color:white;
+
+   font-size: 1.5rem;
+  text-align: left;
+  background-color: $color-fondo;
+  padding-left: 1rem;
+  }
+}
+
+.altura_contacto{
+
+  height:700px;
+}
+
+.espaciado_contacto {
+  @include estilo_columnas;
+}
+.row
+{margin: 0;
+  padding: 1rem;}
+
+
+
+  @media (min-width: 768px) {
+    .espaciado_contacto {
+
+      display: flex;
+  flex-direction: row;
+  align-items:center;
+    }
+  }
+
+  .ayufa{
+    min-height: 100vh;
+
+  }

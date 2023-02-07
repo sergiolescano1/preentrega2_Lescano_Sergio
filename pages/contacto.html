@@ -5,69 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="ayufa">
 
     
-    <header class="navbackground">
-
-        <!--Colocó icono-->
-        <a href="../index.html">
-            <img src="../img/icono.png" alt="Logo" title="Este es el logo" class="logo">
-        </a>
+    <header >
+       
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
+       
+        <div class="container-fluid ">
+    
+            <a href="../index.html">
+                <img src="../img/icono.png" alt="Logo Coderhouse" title="Este es el logo de Coderhouse" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+    
+               
     
     
-        <!-- <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>-->
-        <!--Estructura de un menu de navegación-->
-        <nav >
-            <ul class ="menu__nav"  >
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>  
-                    <a href="jugadores.html">Jugadores</a>
-                </li>
-                <li>
-                    <a href="Estadio.html">Estadio</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
     
-                </li>
-                <li>
-                    <a href="videos.html">Videos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jugadores.html">Jugadores</a>
+                    </li>
     
-                
-            </ul>
-        </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Estadio.html">Estadio</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link"href="videos.html">Videos</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
 
 
-    <section class="parallax-contacto">
-        <h1>Formularios de Inscripción</h1>
+    <section class="parallax altura_contacto">
+        <h1>Formularios de Contacto</h1>
 
         <form>
-            <fieldset class="fieldset_color">
+            <fieldset class="fieldset_color ">
                 <!--Textos-->
-            <div>
-                <label for="nombre-apellido">Nombre y Apellido</label>
+            <div class="espaciado_contacto">
+                <label for="nombre-apellido">Nombre y Apellido: </label>
                 <input type="text" id="nombre-apellido" placeholder="Ingresa tu nombre y apellido">
             </div>
             
-            <div>
+            <div class="espaciado_contacto">
                 <!--Correos electronicos-->
-                <label for="correo">Correo Electrónico</label>
+                <label for="correo">Correo Electrónico: </label>
                 <input type="email" id="correo"placeholder="Correo Electrónico">
             </div>
 
-            <div>
+            <div class="espaciado_contacto">
                 <!--Correos electronicos-->
-                <label for="Telefono"> Telefono</label>
+                <label for="Telefono"> Telefono: </label>
                 <input type="tel" id="telefono"placeholder="Ingrese Telefono">
             </div>
           
@@ -75,7 +84,7 @@
 
             <div class="row">
                 <label class="required" for="message">Mensaje:</label><br />
-                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="10"></textarea><br />
                 <span id="message_validation" class="error_message"></span>
               </div>
            
@@ -97,5 +106,9 @@
   </div>
   </footer>
 
+<!-- LINK DE BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 </html>

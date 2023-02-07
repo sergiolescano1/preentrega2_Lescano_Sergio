@@ -1,359 +1,368 @@
 /*Reseteo CSS*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: green;
-    width: 100%;
-    z-index: 1;
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+}
+
+/*
+#navbarNav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
-a {
-    text-decoration: none;
+*/
+#navbarNav li a {
+  text-align: end;
+  align-items: flex-end;
+  color: green;
+  transition: all 1s;
+}
+#navbarNav li a:hover {
+  background-color: #000;
+  color: red;
+  padding: 10px;
+  border-radius: 10%;
 }
 
-img {
-    max-width: 100%;
+.parallax {
+  padding-top: 3rem;
+  gap: 2rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11));
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-}
-
-.menu__nav {
-  padding-top: 1rem;
-    display: column;
-
-/*    display: flex;*/
-
-    list-style: none;
-    text-align: center;
-    gap: 1rem;
-}
-
-.menu__nav li a {
-    color: #fff;
-    transition: all .3s;
-}
-
-.menu__nav li a:hover {
-    background-color: #000;
-    color: green;
-    padding: 10px;
-    border-radius: 10%;
-}
-
-
-h1{
+h1, h3, h5 {
+  text-align: center;
   color: white;
   padding-bottom: 1rem;
 }
-
-
-h3{
-  color: white;
-  text-align: center;
-
+h1:hover, h3:hover, h5:hover {
+  color: gray;
+  font-weight: bold;
+  text-decoration: underline;
 }
-h5
-{
-  text-align: center;
-}
-/*creo parallax a pagina index*/
-.parallax{
-    padding-top: 2rem;
-    gap:5rem;
-  /*  background-image: url(../img/ganadores.jpg);*/
-margin-top: 0;
-background:linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11) );
 
- /*   height:600px;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-*/
-  /*dejo espacios*/
-}
-.parallax p{
-  color:white;
-  padding: 1rem;
+h1 {
+  padding-top: 3rem;
   text-align: center;
 }
-/*fin de menu*/
 
-#carouselExampleIndicators{
-    width: 300px;
-  
+#carouselExampleIndicators {
+  width: 300px;
 }
 
 .carousel-item img {
-    height: 225px;
+  height: 225px;
 }
-.carousel-control-next-icon, 
+
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: blue;
-    border-radius: 50%;
-    padding: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-
-.bacn{/*bacn color negro de cards en pagina index*/
-
-color:black;
- /* background:linear-gradient(to top, rgb(9, 1, 72), rgb(0, 3, 11) );*/
+.bacn { /*bacn color negro de cards en pagina index*/
+  color: black;
+}
+.bacn p {
+  color: black;
 }
 
-.bacn p{
-  color:black;
-   /* background:linear-gradient(to top, rgb(9, 1, 72), rgb(0, 3, 11) );*/
-  }
-.tam11{
-    height:50px;
-    width: 50px;
-    
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; /*espacio entre tarjetas*/
+  /*fagdfsagwa*/
+  display: flex;
+  flex-wrap: wrap;
 }
-
-  .padre-cards {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    gap: 3rem; /*espacio entre tarjetas*/
-
-    /*fagdfsagwa*/
-    display: flex;
-    flex-wrap:wrap;
+.padre-cards img {
+  padding-left: 5%; /* borde entre la foto y el contorno*/
+  padding-right: 5%;
+  padding-top: 5%;
+  height: 250px;
 }
-
-.padre-cards img{
- 
- 
- padding-left: 5%;/* borde entre la foto y el contorno*/
-padding-right: 5%;
-padding-top: 5%;
-
-height: 250px;
-
-}
-
-.card-body h5{
-  padding-top: 0;
-  color: red;
-}
-.card-body p{
-text-align: center;}
 
 .card {
   background-color: rgba(252, 246, 239, 0.89);
   width: 16rem; /*ancho de la tarjeta*/
   border-radius: 10%;
 }
-
-
-.padre-cards .card:hover {
+.card:hover {
   transform: translateY(-15px); /*efecto mivimiento hacia arriba*/
   box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.2); /*efecto sombra*/
 }
 
-
-
-#footer
-{
-  background-color: black;
-
+.card-body h5 {
+  padding-top: 0;
+  color: red;
 }
-.footer_down{
-  background-color: black;
-
-  border-radius: 10%;
-border-style:ridge; 
-border-color: #fff; 
-color:#C4AA25
-  
-}
-/**************************************************************************************/
-/*PAGINA TABLA*/
-/*************************************************************************************/
-.table{
-  text-align: center;  
-}
-
-.table_h1{
+.card-body h5 p {
   text-align: center;
-  padding: 1rem;
 }
 
-.table-hover tbody td:hover{
-  color:green;
-}
-.table-hover tbody th:hover{
-  color:blue;
+#footer {
+  background-color: black;
 }
 
+.footer_down {
+  background-color: black;
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: #fff;
+  color: #C4AA25;
+}
 
-.imagen_tabla{
+/*//////////////media query/////////
+/*Tablet*/
+@media (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .card {
+    background-color: rgba(252, 246, 239, 0.89);
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carouselExampleIndicators {
+    width: 500px;
+  }
+  .carousel-item img {
+    height: 350px;
+  }
+}
+/*Desktop*/
+@media (min-width: 1200px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carouselExampleIndicators {
+    width: 600px;
+  }
+}
+.table {
+  text-align: center;
+}
+.table img:hover {
+  transform: translateY(-15px); /*efecto mivimiento hacia arriba*/
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.2); /*efecto sombra*/
+}
+
+.table-hover tbody td:hover {
+  color: green;
+}
+
+.table-hover tbody th:hover {
+  color: blue;
+}
+
+.imagen_tabla {
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
   width: 3rem;
 }
 
-
-/*/////////////////////////////////////*/
-/*contacto*/
-/*////////////////////////////////////*/
-.fieldset_color
-{
-  background-color: rgba(19, 6, 203, 0.3);
-}
-.parallax-contacto{
-
-  background-image: url(../img/obelisco.jpg);
-
-
-  height:900px;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-
-
-/*dejo espacios*/
-padding: 25px 25px 25px 25px;
-margin-bottom: 1rem;
-}
-
-.parallax-contacto label{
-  color:#b39114;
-
-   font-size: 1.5rem;
-  text-align: left;
-  background-color: rgba(0, 6, 6, 1);
-}
-
-.parallax-contacto h1{
-  font-size: 2rem;
-  text-align: center;
-  color:rgb(155, 174, 11);
-  background-color: rgba(0, 0, 0, 1);
-}
-
-
-
-/***************************
 /*Estadios
 ///////////////////////////*/
+.espaciado_paginas p {
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #C4AA25;
+  text-align: center;
+}
 
 .estadios_fotos {
-
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 .estadios_fotos img {
   border-radius: 3px;
-  max-width:40%;
-  border:#C4AA25 2px solid;
+  max-width: 40%;
+  border: #C4AA25 2px solid;
+}
+.estadios_fotos img:hover {
+  border: blue 2px solid;
 }
 
-.estadios_fotos :hover {
-  border:blue 2px solid;
-}
-
-.mapa
-{
-display: flex;
-flex-direction: column;
+.mapa {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.mapa iframe{
+
+.mapa iframe {
   max-width: 60%;
   padding-bottom: 1rem;
   height: 300px;
 }
 
-
-
 /*//////////////media query/////////
 /*Tablet*/
 @media (min-width: 768px) {
-  .padre-cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-  }
-  .card {
-    background-color: rgba(252, 246, 239, 0.89);
-    width: 20rem;
-
-    display: flex;
-    flex-wrap:wrap;
-  }
-
-  #carouselExampleIndicators{
-    width: 500px;
-  
-}
-
-.carousel-item img {
-    height: 350px;
-}
-
-
-
-.menu__nav {
-    display: flex;
-/*    display: flex;*/
-}
-
-.estadios_fotos {
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content: center;
+  .estadios_fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .estadios_fotos img {
-    max-width:40%;
+    max-width: 40%;
     height: auto;
   }
-  .mapa iframe{
+  .mapa iframe {
     height: 500px;
   }
-  
-
 }
-
 /*Desktop*/
 @media (min-width: 1200px) {
-  .padre-cards {
-      grid-template-columns: repeat(3, 1fr);
+  .estadios_fotos img {
+    max-width: 45%;
   }
-  .card {
-    width: 20rem;
-    display: flex;
-    flex-wrap:wrap;
-  }
-
-  #carouselExampleIndicators{
-    width: 600px;
 }
-
-.carousel-item img {
-    height: 450px;
-}
-
-.menu__nav {
+/*FILTRO DE PRODUCTOS*/
+.card_video {
+  background-color: rgba(6, 24, 48, 0.89);
+  width: 20rem;
+  border-radius: 5%;
   display: flex;
-
+  flex-wrap: wrap;
+}
+.card_video iframe {
+  width: 20rem;
+  background-color: rgba(6, 24, 48, 0.89);
+  height: 11rem;
+}
+.card_video h5 {
+  padding: 1rem;
 }
 
-.estadios_fotos img {
-  max-width:45%;
+.container_videos {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
 }
+
+.container-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
+.container-opciones label {
+  cursor: pointer;
+  padding: 1rem;
+}
+.container-opciones label:nth-of-type(odd) {
+  background-color: rgb(28, 189, 234);
+  border-radius: 10%;
+  border-color: blue;
+}
+.container-opciones label:nth-of-type(even) {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  border-color: gray;
+}
+
+#final,
+#postfinal,
+#todos {
+  display: none;
+}
+
+.card_final,
+.card_postfinal {
+  display: none;
+}
+
+#final:checked ~ .container_videos .card_final,
+#postfinal:checked ~ .container_videos .card_postfinal {
+  display: flex;
+}
+
+#todos:checked ~ .container_videos .card_final,
+#todos:checked ~ .container_videos .card_postfinal {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .card_video {
+    width: 40rem;
+  }
+  .card_video iframe {
+    width: 40rem;
+    height: 16rem;
+  }
+}
+@media (min-width: 1080px) {
+  .card_video {
+    width: 50rem;
+  }
+  .card_video iframe {
+    width: 50rem;
+    height: 25rem;
+  }
+}
+* .fieldset_color {
+  background-color: rgba(19, 6, 203, 0.3);
+}
+* .fieldset_color label {
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  background-color: linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11));
+  padding-left: 1rem;
+}
+
+.altura_contacto {
+  height: 700px;
+}
+
+.espaciado_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  margin: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .espaciado_contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.ayufa {
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
