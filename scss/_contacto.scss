@@ -39,4 +39,29 @@
     }
   }
 
+  //EXTEND//
+.boton{
+  width: 160px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.boton-aceptar{
+  @extend .boton;
+  background-color:green;
+  color:white;
+}
+
+.boton-cancelar{
+  @extend .boton;
+  background-color:red;
+  color:white;
+}
+
+.espacio_contacto
+{
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
 
